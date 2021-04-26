@@ -10,3 +10,5 @@ We solved most of the puzzles fairly quickly, except for challenge number 30, sh
 To save my dignity (at least to some extent), I decided to create this little notebook. It uses JAX to find possible tile placements (using convolutions), which allows pruning the search tree if the board can't be covered or tiles cannot be placed anymore. Unfortunately, the logic is not jittable, so it's not particularly fast, but it does find the solution to the infamous challenge number 30 in about 5 minutes:
 
 ![Solution to challenge 30](images/sln-30.png)
+
+It would be interesting to try this again with a declarative or logic-based approach.
